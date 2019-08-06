@@ -17,14 +17,17 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
+}
+.logo {
+  width: 500px;
 }
 
 #input-element {
   display: inline-block;
   height: 55px;
   padding: 0 20px;
-  background: #FFF;
+  background: #fff;
   border: 0;
   font-size: 18px;
   color: #444;
@@ -38,7 +41,7 @@ header {
   padding: 0 20px;
   margin-left: 10px;
   background: #434343;
-  color: #FFF;
+  color: #fff;
   border: 0;
   font-size: 20px;
   font-weight: bold;
@@ -59,16 +62,21 @@ header {
   border-radius: 8px;
   width: 400px;
   margin-top: 30px;
-  background: #FFF;
+  background: #3c3f41;
 }
 
-.status-info{
-  background: #444;
+.status-info {
+  background: #1d9bd5;
   width: 100%;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
-.name{
+.name {
   font-weight: bold;
+}
+
+.git-image {
+  width: 100px;
+  border-radius: 50%;
 }

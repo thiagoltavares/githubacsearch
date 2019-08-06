@@ -8,11 +8,10 @@ const cardUser = document.querySelector(".user");
 
 const cardStar = document.querySelector(".followers");
 const cardFork = document.querySelector(".following");
+const imgURL = document.querySelector(".image");
 const cardContributor = document.querySelector(".public_repos");
 
-
-const test = {teste: "test"};
-console.log(test);
+const test = { teste: "test" };
 
 var userLocated = inputElement.value;
 
@@ -21,17 +20,14 @@ function showName() {
   axios
     .get("https://api.github.com/users/" + userLocated)
     .then(function(response) {
-
       console.log(response.data);
       cardName.innerHTML = response.data.name;
-      cardImage.innerHTML = response.data.avatar_url;
       cardUser.innerHTML = response.data.login;
-
-
+      imgURL.innerHTML =
+        '<img class="git-image" src="' + response.data.avatar_url + '" />';
       cardStar.innerHTML = response.data.followers;
       cardFork.innerHTML = response.data.following;
       cardContributor.innerHTML = response.data.public_repos;
-    
     })
     .catch(function(error) {
       console.warn(error);

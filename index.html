@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/dc29f359fa.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Git User's Info</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/dc29f359fa.js"></script>
-  <link rel="stylesheet" href="./style.css">
-  <title>Git User's Info</title>
-</head>
-
-<body>
-  <header>
-    <img src="./assets/ac.png" alt="Academia de Código">
-    <div class="search">
-      <input id="input-element" type="text">
-      <button id="search-user">Search <i class="fab fa-github"></i></button>
-    </div>
-
-    <div class="info-card">
-      <div class="avatar-info">
-        <ul>
-          <li class="name">nome</li>
-          <li class="image">imagem</li>
-          <li class="user">user</li>
-        </ul>
+  <body>
+    <header>
+      <div class="first-header">
+        <img class="logo" src="./assets/ac.png" alt="Academia de Código" />
+        <div class="search">
+          <input id="input-element" type="text" />
+          <button id="search-user">Search <i class="fab fa-github"></i></button>
+        </div>
       </div>
-      <div class="status-info">
-        <ul>
-          <li>Followers: <span class="followers"></span></li>
-          <li>Following: <span class="following"></span></li>
-          <li>Public Repos: <span class="public_repos"></span></li>
-        </ul>
+      <div class="info-card">
+        <div class="avatar-info">
+          <ul>
+            <li class="name">nome</li>
+            <li class="image"></li>
+            <li class="user">user</li>
+          </ul>
+        </div>
+        <div class="status-info">
+          <ul>
+            <li>Followers: <span class="followers"></span></li>
+            <li>Following: <span class="following"></span></li>
+            <li>Public Repos: <span class="public_repos"></span></li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-  </header>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="main.js"></script>
-</body>
-
+    </header>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
