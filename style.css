@@ -57,10 +57,9 @@ header {
 .info-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   border-radius: 8px;
-  width: 400px;
+  width: 372px;
   margin-top: 30px;
   background: #3c3f41;
 }
@@ -79,4 +78,14 @@ header {
 .git-image {
   width: 100px;
   border-radius: 50%;
+}
+.name,
+.image,
+.user {
+  text-align: center;
+}
+
+.ul-info {
+  display: flex;
+  justify-content: space-around;
 }
